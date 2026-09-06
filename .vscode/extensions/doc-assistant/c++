@@ -1,0 +1,24 @@
+int main() {
+    std::string name;
+    int age;
+    double height;
+
+    // Reading a full line of text (string with spaces)
+    std::cout << "Enter your full name: ";
+    std::getline(std::cin, name);
+
+    // Reading an integer
+    std::cout << "Enter your age: ";
+    std::cin >> age;
+
+    // Reading a floating-point number
+    std::cout << "Enter your height in meters (e.g., 1.75): ";
+    std::cin >> height;
+
+    // Displaying the input values
+    std::cout << "\n--- User Summary ---" << std::endl;
+    std::cout << "Name:   " << name << std::endl;
+    std::cout << "Age:    " << age << " years old" << std::endl;
+    std::cout << "Height: " << height << " meters" << std::endl;
+
+    return 0;
